@@ -1,0 +1,35 @@
+{{> en/header_en }}
+
+{{> en/entrance_a/entrance-a }}
+{{> en/entrance_b/entrance-b }}
+
+<main>
+		{{> on-load-animation }}
+	<div class="swiper main-swiper w-100">
+		<div class="swiper-wrapper main-swiper-wrapper">
+			<div class="swiper-slide main-swiper-slide white-header white-dots" id="information_en" data-tooltip="Information">
+				{{> en/information }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="about_us_en" data-tooltip="About Us">
+				{{> en/about_us }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="apartments_en" data-tooltip="Apartments">
+				{{> en/apartments }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="mission_en" data-tooltip="Our Mission">
+				{{> en/our_mission }}
+			</div>
+			<div class="swiper-slide main-swiper-slide white-dots" id="standards_en" data-tooltip="Standards of living">
+				{{> en/standards_of_living }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="summary_en" data-tooltip="Summary">
+				{{> en/summary }}
+			</div>
+			<div class="swiper-slide main-swiper-slide white-header white-dots" id="contact_en" data-tooltip="Contact">
+				{{> en/contact }}
+			</div>
+		</div>
+		<div class="swiper-pagination main-pagination"></div>
+	</div>
+</main>
+{{> footer }}

@@ -1,0 +1,109 @@
+// // Outfit
+// @font-face {
+//     font-family: 'Outfit', sans-serif;
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../fonts/Outfit/Outfit-Regular.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Outfit', sans-serif;
+//     font-style: normal;
+//     font-weight: 500;
+//     src: url('../fonts/Outfit/Outfit-Medium.ttf');
+// }
+
+// // Manrope
+// @font-face {
+//     font-family: 'Manrope', sans-serif;
+//     font-style: normal;
+//     font-weight: 400;
+//     src: url('../fonts/Manrope/Manrope-Regular.ttf');
+// }
+
+// // Manrope
+// @font-face {
+//     font-family: 'Manrope', sans-serif;
+//     font-style: normal;
+//     font-weight: 600;
+//     src: url('../fonts/Manrope/Manrope-SemiBold.ttf');
+// }
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&family=Outfit:wght@400;500&display=swap');
+
+$outfit: 'Outfit', sans-serif;
+$manrope: 'Manrope', sans-serif;
+
+// Outfit Regular
+.font-outfit--regular {
+    font-family: $outfit;
+    font-weight: 400;
+}
+
+// Outfit Medium
+.font-outfit--medium {
+    font-family: $outfit;
+    font-weight: 500;
+}
+
+// Manrope Regular
+.font-manrope--regular {
+    font-family: $manrope;
+    font-weight: 400;
+}
+
+// Manrope SemiBold
+.font-manrope--semibold {
+    font-family: $manrope;
+    font-weight: 500;
+}
+
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: $outfit;
+}
+
+
+h1,
+.h1 {
+    @include media-breakpoint-down(xl) {
+        font-size: 10rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        font-size: 5rem;
+    }
+}
+
+h2,
+.h2 {
+    @include media-breakpoint-down(lg) {
+        font-size: 4rem;
+    }
+}
+
+h3,
+.h3 {
+    @include media-breakpoint-down(lg) {
+        font-size: 1.8rem;
+    }
+}
+
+p {
+    font-family: $manrope;
+    line-height: 2.7rem;
+
+    @include media-breakpoint-down(lg) {
+        font-size: 1.4rem;
+    }
+}

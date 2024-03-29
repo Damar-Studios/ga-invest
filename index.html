@@ -1,0 +1,35 @@
+{{> shq/header }}
+
+{{> shq/hyrja_a/hyrja-a }}
+{{> shq/hyrja_b/hyrja-b }}
+
+<main>
+		{{> on-load-animation }}
+	<div class="swiper main-swiper w-100">
+		<div class="swiper-wrapper main-swiper-wrapper">
+			<div class="swiper-slide main-swiper-slide white-header white-dots" id="information_shq" data-tooltip="Informata">
+				{{> shq/informata }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="about_us_shq" data-tooltip="Rreth nesh">
+				{{> shq/rreth_nesh }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="apartments_shq" data-tooltip="Apartamentet">
+				{{> shq/apartamentet }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="mission_shq" data-tooltip="Misioni">
+				{{> shq/misioni }}
+			</div>
+			<div class="swiper-slide main-swiper-slide white-dots" id="standards_shq" data-tooltip="Standartet e jetesës">
+				{{> shq/standardet_e_jeteses }}
+			</div>
+			<div class="swiper-slide main-swiper-slide" id="summary_shq" data-tooltip="Përmbledhje">
+				{{> shq/permbledhje }}
+			</div>
+			<div class="swiper-slide main-swiper-slide white-header white-dots" id="contact_shq" data-tooltip="Kontakti">
+				{{> shq/kontakti }}
+			</div>
+		</div>
+		<div class="swiper-pagination main-pagination"></div>
+	</div>
+</main>
+{{> footer }}

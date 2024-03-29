@@ -1,0 +1,70 @@
+.swiper {
+    height: 100vh;
+
+    @include media-breakpoint-down(lg) {
+        height: fit-content;
+    }
+
+    .swiper-wrapper {
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+        }
+
+        .swiper-slide {
+            overflow-y: hidden;
+            overflow-x: hidden;
+
+            @include media-breakpoint-down(lg) {
+                overflow-y: hidden;
+                overflow-x: auto;
+            }
+        }
+    }
+
+    .main-pagination {
+        right: 4rem !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .swiper-pagination-bullet {
+            width: 0.8rem;
+            height: 0.8rem;
+            margin: 1.25rem 0 !important;
+            background: #868B99;
+            cursor: pointer;
+
+            &.swiper-pagination-bullet-active {
+                width: 1rem;
+                height: 1rem;
+                background: $primary;
+            }
+        }
+
+        &.white-dots {
+            .swiper-pagination-bullet {
+                background: #B8B8C1;
+
+                &.swiper-pagination-bullet-active {
+                    background: $white;
+                }
+            }
+        }
+    }
+}
+
+.tippy-box[data-theme~="custom"] {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+    font-family: $outfit;
+    color: $primary;
+    background-color: $white;
+    border-radius: 5rem;
+    padding: 0.4rem 3rem 0.4rem 1rem;
+    background-image: url(/images/tooltip-arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    background-position: center right 1rem;
+    box-shadow: 0 1px 10px #00000004;
+}
